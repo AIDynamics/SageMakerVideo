@@ -1,0 +1,33 @@
+oracle("mode") = "classification"
+oracle("complexity") =  0.1
+oracle("generated") = 2
+
+source:
+    bind = "training_data.csv" ;
+    input:
+        x ~ from "SentimentText"
+            -> text: [200]
+            -> TextDataGenerator: [nb_words=20000] ;
+    output:
+        y ~ from "Sentiment"
+            -> flat: [2]
+            -> FlatDataGenerator: [] ;
+    params:
+        validation_split = 0.5,
+        batch_size = 100 ;
+
+architecture:
+    input:  x ~ text: [200] ;
+    output: y ~ flat: [2] ;
+
+    x -> auto -> y ;
+
+train:
+    compile:
+        optimizer = auto,
+        loss = auto,
+        metrics = ['accuracy'] ;
+    run:
+        epochs = 2 ;
+    dashboard:
+        save_on = 'val_acc' ;
