@@ -37,9 +37,9 @@ $ cd <path/to/directory/containing/train.nml>
 $ aws s3 sync . s3://<your_bucket_name>
 ```
 
-<b>NOTE: You can also use the AWS console to sync the directory as shown in the [documentation](https://docs.neopulse.ai/NP-SageMaker/).
+<b>NOTE: You can also use the AWS console to sync the directory as shown in the [documentation](https://docs.neopulse.ai/NP-SageMaker/#s3-bucket).</b>
 
-Now you are ready to use Amazon SageMaker to train your model. Head to the SageMaker console, and follow the rest of the [instructions](https://docs.neopulse.ai/NP-SageMaker/).
+Now you are ready to use Amazon SageMaker to train your model. Head to the SageMaker console, and follow the rest of the [instructions](https://docs.neopulse.ai/NP-SageMaker/#algorithm-subscription).
 
 # License
 Tutorial materials are published under the MIT license. See LICENSE for terms for commercial, academic, and personal use.
