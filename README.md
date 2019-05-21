@@ -26,15 +26,13 @@ https://www.kaggle.com/oumaimahourrane/imdb-reviews
 
 Unzip the archive and rename the file: **training_data.csv**.
 
-Next, download the file **train.nml** from this repository by [clicking here](https://raw.githubusercontent.com/DimensionalMechanics/SageMakerVideo/master/train.nml) and copying and pasting the code.
+Next, download the file **train.nml** from this repository by [clicking here](https://raw.githubusercontent.com/DimensionalMechanics/SageMakerVideo/master/train.nml) and copying and pasting the code into a file named: **train.nml**.
 
-<b>NOTE: if you copy/paste the code into a file, you MUST name that file train.nml for it to run using the SageMaker Algorithm.<b>
+**NOTE:** if you copy/paste the code into a file, you MUST name that file **train.nml** for it to run using the SageMaker Algorithm.
 
 Now, make sure these two files are in the same directory.
 
-Finally, upload the files to your Amazon S3 bucket.
-
-There are two ways to do this:  
+Finally, upload the files to your Amazon S3 bucket. There are two ways to do this:  
 
 - Use the AWS console to sync the directory as shown in the [documentation](https://docs.neopulse.ai/NP-SageMaker/#s3-bucket).</b>
 - Use the AWS CLI. Instructions for installing and using the AWS CLI can be found here: https://aws.amazon.com/cli/. The content can then be synced to your bucket by executing:
