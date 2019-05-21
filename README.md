@@ -24,6 +24,8 @@ First download the dataset described in the video. You can get it here:
 
 https://www.kaggle.com/oumaimahourrane/imdb-reviews
 
+Unzip the archive and rename the file: **training_data.csv**.
+
 Next, download the file **train.nml** from this repository by [clicking here](https://raw.githubusercontent.com/DimensionalMechanics/SageMakerVideo/master/train.nml) and copying and pasting the code.
 
 <b>NOTE: if you copy/paste the code into a file, you MUST name that file train.nml for it to run using the SageMaker Algorithm.<b>
