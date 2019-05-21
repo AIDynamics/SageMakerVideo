@@ -30,14 +30,17 @@ Next, download the file **train.nml** from this repository by [clicking here](ht
 
 Now, make sure these two files are in the same directory.
 
-Finally, upload the files to your Amazon S3 bucket using the AWS CLI. Instructions for installing and using the AWS CLI can be found here: https://aws.amazon.com/cli/
+Finally, upload the files to your Amazon S3 bucket.
 
-```bash
-$ cd <path/to/directory/containing/train.nml>
-$ aws s3 sync . s3://<your_bucket_name>
-```
+There are two ways to do this:  
 
-<b>NOTE: You can also use the AWS console to sync the directory as shown in the [documentation](https://docs.neopulse.ai/NP-SageMaker/#s3-bucket).</b>
+- Use the AWS console to sync the directory as shown in the [documentation](https://docs.neopulse.ai/NP-SageMaker/#s3-bucket).</b>
+- Use the AWS CLI. Instructions for installing and using the AWS CLI can be found here: https://aws.amazon.com/cli/. The content can then be synced to your bucket by executing:
+    ```bash
+    $ cd <path/to/directory/containing/train.nml>
+    $ aws s3 sync . s3://<your_bucket_name>
+    ```
+
 
 Now you are ready to use Amazon SageMaker to train your model. Head to the SageMaker console, and follow the rest of the [instructions](https://docs.neopulse.ai/NP-SageMaker/#algorithm-subscription).
 
